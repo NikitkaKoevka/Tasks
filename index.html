@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="taskContainer">
+        <button class="taskButton" onclick="openModal('1Task')">1 задача</button>
+        <button class="taskButton" onclick="openModal('2Task')">2 задача</button>
+    </div>
+    <div class="modal" id="1Task">
+        <button class="closeButton" onclick="closeModal('1Task')">закрыть</button>
+        <div class="buttonGroup">
+            <button id="task_1" onclick="searchAtribute()">Найти атрибут</button>
+            <button id="task_2" onclick="searchIndex()">Найти индекс</button>
+            <button id="task_3" onclick="searchName()">Найти имя</button>
+            <button id="task_4" onclick="showLowerAge()">Сортировка возраста</button>
+        </div>
+    </div>
+    <div class="modal" id="2Task">
+        <button class="closeButton" onclick="closeModal('2Task')">закрыть</button>
+        <div class="buttonGroup">
+            <button id="task_1" onclick="genRandomArray()">э?</button>
+            <button id="task_2" onclick="genRandomArrayWithoutNames()">и</button>
+            <button id="task_3" onclick="genRandomIDArray(10)">а!</button>
+        </div>
+    </div>
+    <div class="bgFigure"></div>
+</body>
+<script src="task_1.js"></script>
+<script src="task_2.js"></script>
+</html>
